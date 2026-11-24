@@ -167,15 +167,56 @@
             list="styleTypes"
           />
           <datalist id="styleTypes">
-            <option value="Rock">
-            <option value="Pop">
-            <option value="Samba">
-            <option value="Sertanejo">
+            <option value="Rock"></option>
+            <option value="Pop"></option>
+            <option value="Samba"></option>
+            <option value="Sertanejo"></option>
           </datalist>
           <br />
 
           <label for="favoriteColor">Cor favorita</label>
-          <input type="color" name="userFavoriteColor" id="favoriteColor">
+          <input type="color" name="userFavoriteColor" id="favoriteColor" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Opinião</legend>
+
+          <p>O que você acha da qualidade do nosso serviço?</p>
+
+          <input
+            type="radio"
+            name="userSatisfaction"
+            id="excellent"
+            value="otima"
+          />
+          <label for="excellent">Ótima</label>
+          <br />
+
+          <input type="radio" name="userSatisfaction" id="good" value="boa" />
+          <label for="good">Boa</label>
+          <br />
+
+          <input
+            type="radio"
+            name="userSatisfaction"
+            id="regular"
+            value="regular"
+          />
+          <label for="regular">Regular</label>
+          <br />
+
+          <input type="radio" name="userSatisfaction" id="bad" value="ruim" />
+          <label for="bad">Ruim</label>
+          <br />
+
+          <label for="comment">Comentário</label>
+          <textarea
+            name="userComment"
+            id="comment"
+            rows="5"
+            cols="90"
+            placeholder="Faça seu comentário aqui..."
+          ></textarea>
         </fieldset>
 
         <button type="submit">Enviar</button>
