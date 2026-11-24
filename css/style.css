@@ -7,6 +7,7 @@
 body {
   background-color: #f9f9f9;
   font-family: "Work Sans", sans-serif;
+  padding-bottom: 30px;
 }
 
 main {
@@ -26,6 +27,7 @@ img {
 
 h1 {
   font-family: "Fjalla One", sans-serif;
+  text-align: center;
 }
 
 form {
@@ -48,8 +50,13 @@ legend {
 }
 
 label {
-    display: inline-block;
-    margin-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
 input,
@@ -72,6 +79,38 @@ input[type="checkbox"] {
 }
 
 input[type="color"] {
-    width: 40px;
-    padding: 0 5px;
+  width: 40px;
+  padding: 0 5px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: green;
+  color: #ffffff;
+}
+
+button[type="reset"]:hover {
+  background-color: orangered;
+  color: #ffffff;
 }
